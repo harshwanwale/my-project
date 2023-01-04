@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.about{
+    margin:auto;
+    width: 70%;
+    color:#fff;
+    margin-top: 10%;
+    display: block;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(5, 6, 7, 0.5);
+    text-align: center;
+}
+.about h2{
+    font-size: 40px;
+
+}
+.about p{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-top:20px ;
+    padding-right: 20px;
+    padding-bottom: 50px;
+
+}
+.head a p{
+    padding: 1%;
+}
+.threeblocks {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin: 1%;
+  }
+.titleforstages{
+    text-align: center;
+    background-color: rgba(40, 74, 80, 0.886);
+    width: 80%;
+    padding-bottom:2%;
+    margin-left: 10%;
+    color: white;
+    border: solid 3px;
+}

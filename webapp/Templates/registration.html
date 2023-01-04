@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block csslink %}
+<link rel="stylesheet"  href="static/registrationcss.css">
+{% endblock csslink %}
+{% block title %}
+Registration page
+{% endblock title %}
+{% block first_section_content %}
+<h1>
+  Volunteer forms will start from 10 january 2023 onwards..!
+</h1>
+{% endblock first_section_content %}
+{% comment %} <form class="formvolunteer" method="POST" action="REGISTRATION">
+  {% csrf_token %}
+    <h2 class="titleform">
+        Registration form for first
+         year volunteers..!
+    </h2>
+    <label for="fname" >First name:</label><br>
+    <input type="text" placeholder="Enter your first name" name="firstname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" placeholder="Enter your last name" name="lastname"><br>
+    <label for="Rno.">Registration No:</label><br>
+    <input type="text" placeholder="Enter your college registration no." name="regno"><br>
+    <label for="Mno.">Mobile No.:</label><br>
+    <input type="text" placeholder="Enter your mobile no" name="mobile"><br>
+    <label for="email">Email Address:</label><br>
+    <input type="text"placeholder="Enter your email address" name="email"><br>
+    <label for="place">Hostelite or Localite:</label><br>
+    <input type="text" placeholder="Localite or Hostelite" name="nativeplace"><br>
+    <label for="committee">Committee want to join:</label><br>
+    <select name="committee">
+      <option name="select1" value="finance and food-site">finance and food-site</option>
+      <option name="select2" value="Decoration and Guest management">Decoration and Guest management</option>
+      <option name="select3" value="Web and publicity">Web and publicity</option>
+      <option name="select4" value="Backstage and prize distribution">Backstage and prize distribution</option>
+      <option name="select5" value="Anchoring,Drama,Singing and Dance">Anchoring,Drama,Singing and Dance </option>
+      <option name="select6" value="Compitation Management">Competition Management</option>
+    </select><br>
+    <label for="skills">Skills,Experience related to above committee:</label><br>
+    <textarea rows="3" name="skills" placeholder="Mention any 2-3 skills"></textarea>
+    <br>
+    <button class="submit" type="submit" value="Submit">Submit</button>
+  </form>
+{% endblock first_section_content %}
+{% endcomment %}
+{% block nextsection_content %}
+<div class="updates">
+<h2>
+  Updates Regarding Utsav2k23..!
+</h2>
+<div class="list">
+  <ul>
+    <li>
+      Team Utsav2k23 wish you all a Happy New Year!<br> 2023 is the beginning of a new chapter. This is your year. Make it happen.
+    </li>
+    <li>
+      Open House meet comming soon for first year students....stay tuned....
+    </li>
+    <li>
+      Traditional day comming soon...stay tuned....
+    </li>
+    <li>
+      As per Official dates announced by institute Utsav for Year 2023 will be held in 17th to 19th March 2023
+      <br>Please take note of it..
+    </li>
+  </ul>
+</div>
+</div>
+ 
+{% endblock nextsection_content  %}

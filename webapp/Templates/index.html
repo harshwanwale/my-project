@@ -1,0 +1,118 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head><meta mame="keywords"content="cultural,event,utsav,sggs" >
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Utsav2k23</title>
+           <link rel="stylesheet" href="{% static 'style.css' %}">
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+   <body>
+      <section class="header">
+         <nav class="navigation" >
+               <a href="" class="logo"> UTSAV2K23</a>
+                <div class="navlinks" id="navlinks">
+                  <i class="fa fa-times" onclick="hidemenu()"></i>
+                     <uL>
+                       <li> <a href="HOME"> HOME</a></li>
+                       <li> <a href="ABOUT"> ABOUT</a></li>
+                       <li> <a href="REGISTRATION">REGISTRATION</a></li>
+                       <li> <a href="COMMITTEES">COMMITTEES</a></li>
+                     </uL>
+                </div>  
+                <i class="fa fa-bars" onclick="showmenu()"></i>  
+              </nav>
+        </div>
+         <div class="textbox">
+                <a href="" class="image">
+                  <img src="{% static 'images/logo1.png' %}" alt="UTSAV2K23" height="250px" width="250px">
+                </a>
+                <h2>
+                  UTSAV2K23
+                </h2>
+                <h3>
+                      Official Cultural event of SGGSIE&T    
+                </h3>
+         </div>
+     </section>
+     <hr class="line">
+<section class="nextsection"> 
+  <h2>About UTSAV2K22</h2>
+  <nav class="threeblocks">
+    <div class="head">
+      <a href="#">
+      <img src="{%static 'images/Rushi gite.jpeg'%}" alt="head utsav 2k22" height="200px" width="300px">
+      <h2>
+        Rushikesh Gite
+      </h2>
+      <p>
+        Head of Utsav2k22 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores veritatis nostrum impedit eveniet recusandae mollitia libero quam quasi aut, maxime rerum voluptatibus voluptate earum atque, doloribus at quas excepturi beatae.
+      </p>
+    </a>
+    </div>
+    <div class="guest">
+      <a href="#">
+      <img src="{%static 'images/Shruti marathe.JPG' %}" alt="Shruti marathe"
+      height="200px" width="300px">
+      <h2>
+        Shruti Marathe
+      </h2>
+      <p>
+        Special guest of Utsav2k22
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laborum natus deleniti sed facilis minus ducimus. Nobis laborum architecto ratione earum, necessitatibus natus, non aliquam aperiam sapiente totam temporibus repellendus.
+      </p>
+    </a>
+    </div>
+    <div class="director">
+      <a href="#">
+      <img src="{% static 'images/Director sir.jpeg' %}" alt="Dr.Y.V.Joshi" height="200px" width="300px">
+      <h2>
+        Dr.Y.V.Joshi
+      </h2>
+      <p>
+        The Honourable Director of SGGSIE&T. Under guidence of director sir, this event became grand. I would like to thank sir Aor All Of Their Support And Hope This Will Continue For Every Year.
+        
+      </p>
+    </a>
+    </div>
+  </nav>
+  <p>
+    <br> <br> 
+    Thank You Everyone for making UTSAV2K22 Memorable.
+          <br>  ~Rushikesh Gite
+  </p>
+<footer>
+    <div class="footer-content">
+        <p> To know more about us. visit our social media handels given below or contact us on
+           
+          utsav@sggs.ac.in-7219778703
+        </p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/utsavsggs21/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="utsav@sggs.ac.in"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://instagram.com/utsav2k23_sggs?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@utsavsggs1937"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://in.linkedin.com/in/utsav-sggs-633431207"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Developed by team Utsav2k23</p>
+    </div>
+        </ul>
+    </div>
+</footer>
+</section>
+<!-------javascript for toggle menu-------->
+<script>
+  var navlinks =document.getElementById("navlinks");
+  function showmenu(){
+    navlinks.style.right="0";
+    
+  }
+  function hidemenu(){
+    navlinks.style.right="-300px";
+    
+  }
+</script>
+</body>
+</html>

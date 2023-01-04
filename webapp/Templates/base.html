@@ -1,0 +1,65 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head><meta mame="keywords"content="cultural,event,utsav,sggs" >
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>{% block title %}{% endblock title %}</title>
+           <link rel="stylesheet" href="{% static 'style.css' %}">
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+           {% block csslink %}{% endblock csslink %}
+    </head>
+   <body>
+      <section class="header">
+         <nav class="navigation" >
+               <a href="" class="logo"> UTSAV2K23</a>
+                <div class="navlinks" id="navlinks">
+                  <i class="fa fa-times" onclick="hidemenu()"></i>
+                     <uL>
+                      <li> <a href="HOME"> HOME</a></li>
+                      <li> <a href="ABOUT"> ABOUT</a></li>
+                      <li> <a href="REGISTRATION">REGISTRATION</a></li>
+                      <li> <a href="COMMITTEES">COMMITTEES</a></li>
+                     </uL>
+                </div>  
+                <i class="fa fa-bars" onclick="showmenu()"></i>  
+         </nav>
+{% block first_section_content %}{% endblock first_section_content %}
+     </section>
+     <hr class="line">
+<section class="nextsection"> 
+{% block nextsection_content %}{% endblock nextsection_content  %}
+<footer>
+    <div class="footer-content">
+        <p> To know more about us. visit our social media handels given below or contact us on
+           
+          utsav@sggs.ac.in-7219778703
+        </p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/utsavsggs21/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="utsav@sggs.ac.in"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://instagram.com/utsav2k23_sggs?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/@utsavsggs1937"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://in.linkedin.com/in/utsav-sggs-633431207"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Developed by team Utsav2k23</p>
+    </div>
+        </ul>
+    </div>
+</footer>
+</section>
+<!-------javascript for toggle menu-------->
+<script>
+  var navlinks =document.getElementById("navlinks");
+  function showmenu(){
+    navlinks.style.right="0";
+    navlinks.style.display="block";
+  }
+  function hidemenu(){
+    navlinks.style.right="-300px";
+    navlinks.style.display="none";
+  }
+</script>
+</body>
+</html>

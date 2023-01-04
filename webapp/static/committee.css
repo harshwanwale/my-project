@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.header{
+    min-height:270vh;
+    background-image: url(images/color2.jpg);
+}
+.nextsection{
+    background-image: url(images/committee.png);
+    background-size: 100%;
+    padding-bottom: 3%;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+.officialhead{
+    margin-top:2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 25%;
+    height: 30%;
+    background-image: url(images/color.jpg);
+    background-size: cover;
+    border-radius: 10%;
+    padding: 2%;
+    color: #000;
+    box-shadow: 10px 10px 5px;
+}
+.officialhead:hover{
+    scale: 105%;
+    transition: 1s;
+    
+}
+.officialhead a img{
+    border: solid 2px;
+    border-radius: 50%;
+    margin-left: 33%;
+    box-shadow: 5px 5px 5px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.officialhead h2 {
+    font-size: 25px;
+    text-shadow: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+.officialhead p{
+    font: bolder;
+}
+.committee{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    /* width:95vw; */
+}
+.club-coordinator{
+    margin-top:2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 25%;
+    background-image:url(images/color3.jpg);
+    background-size: cover;
+    border-radius: 20%;
+    padding: 2%;
+    color: #000;
+    box-shadow: 5px 5px 5px;
+}
+.club-coordinator:hover{
+    scale:102%;
+    transition: 0.5s;
+}
+.club-coordinator a img{
+    border: solid 2px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.875);
+    box-shadow: 5px 5px 5px;
+}
+@media (max-width:700px) {
+    .header{
+        min-height: 310vh;
+
+    }
+    .officialhead{
+        display: block;
+        width: 70%;
+       
+    }
+    .officialhead a img{
+        margin-left:40% ;
+    }
+    .committee{
+        display: block;
+    }
+    .club-coordinator{
+        width:60%
+    }
+    .navlinks {
+        height: 352vh;
+    }
+    .nextsection{
+        min-height: 50vh;
+    }
+}
